@@ -1,0 +1,23 @@
+After checking out the sources, to start the dev server: ant runserver
+
+To run unit-tests: ant unit-tests
+
+To run javascript unit tests: ant js-unit-tests
+
+To run selenium functional tests:
+- ant deletedb (delete the database)
+- ant runserver
+- ant selenium-tests
+
+TODO/Known issues:
+- upgrade to Spring 3.0 for REST support.
+- need more functional tests
+- fix functional tests target to automatically start the dev server with a clean datastore.
+- spatial search is a problem because of google appengine limitation where
+only one inequality filter per query is supported.
+GeoHash approach does not work accurately (http://labs.metacarta.com/blog/27.entry/geographic-queries-on-google-app-engine/
+ and http://public.grupoinnovant.com/blog/?p=23).
+Current approach searches by lat and then filters in memory - won't scale.
+- Issue with using GAE transactions with Compass due to the fact that the GAE store will not
+allow transactions involving more than 1 entity group. This is why saving EnvHazard
+is not stored in transaction.
