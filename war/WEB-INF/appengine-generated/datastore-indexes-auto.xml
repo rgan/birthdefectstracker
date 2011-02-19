@@ -1,0 +1,26 @@
+<!-- Indices written at 8/25/09 10:10 PM -->
+
+<datastore-indexes>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="meta" ancestor="true" source="auto"/>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="Person" ancestor="false" source="auto">
+        <property name="csTens" direction="asc"/>
+        <property name="dateOfBirth" direction="desc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="BirthDefect" ancestor="false" source="auto">
+        <property name="__key__" direction="asc"/>
+        <property name="name" direction="asc"/>
+    </datastore-index>
+
+    <!-- Used 1 time in query history -->
+    <datastore-index kind="User" ancestor="false" source="auto">
+        <property name="__key__" direction="asc"/>
+        <property name="name" direction="asc"/>
+    </datastore-index>
+
+</datastore-indexes>

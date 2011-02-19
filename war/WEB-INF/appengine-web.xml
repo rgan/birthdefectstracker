@@ -1,0 +1,18 @@
+<appengine-web-app xmlns="http://appengine.google.com/ns/1.0">
+    <application>birthdefectstracker</application>
+    <version>1</version>
+
+    <static-files>
+        <include path="/*.htm"/>
+        <include path="/css/*.*"/>
+        <include path="/css/ui-lightness/*.*"/>
+        <include path="/css/ui-lightness/images/*.*"/>
+        <include path="/js/*.*"/>
+        <include path="/*.ico"/>
+        <include path="/*.png"/>
+        <include path="/instructions.pdf"/>
+    </static-files>
+    <sessions-enabled>true</sessions-enabled>
+
+    <resource-files/>
+</appengine-web-app>

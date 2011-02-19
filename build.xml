@@ -1,0 +1,228 @@
+<project name="BirthDefects" default="datanucleusenhance">
+    <property file="build.properties"/>
+    <property name="build.dir" location="build"/>
+
+    <import file="${sdk.dir}/config/user/ant-macros.xml"/>
+
+    <path id="project.classpath">
+        <pathelement path="war/WEB-INF/classes"/>
+        <fileset dir="war/WEB-INF/lib">
+            <include name="**/*.jar"/>
+        </fileset>
+        <fileset dir="${sdk.dir}/lib">
+            <include name="shared/**/*.jar"/>
+        </fileset>
+    </path>
+
+    <path id="test.classpath">
+        <pathelement path="${build.dir}/test-classes"/>
+        <fileset dir="lib/test">
+            <include name="junit-4.4.jar"/>
+        </fileset>
+        <fileset dir="${sdk.dir}/lib/testing">
+            <include name="*.jar"/>
+        </fileset>
+        <fileset dir="${sdk.dir}/lib">
+            <include name="impl/*.jar"/>
+        </fileset>
+    </path>
+
+    <target name="clean">
+        <delete dir="${build.dir}"/>
+        <delete dir="war/WEB-INF/lib"/>
+        <delete dir="war/WEB-INF/classes"/>
+    </target>
+
+    <target name="copyjars"
+            description="Copies the required JARs to the WAR.">
+        <mkdir dir="war/WEB-INF/lib"/>
+        <copy
+                todir="war/WEB-INF/lib"
+                flatten="true">
+            <fileset dir="${sdk.dir}/lib/user">
+                <include name="**/*.jar"/>
+            </fileset>
+            <fileset dir="lib">
+                <include name="*.jar"/>
+            </fileset>
+        </copy>
+    </target>
+
+    <target name="compile" depends="copyjars"
+            description="Compiles Java source and copies other source files to the WAR.">
+        <mkdir dir="war/WEB-INF/classes"/>
+        <copy todir="war/WEB-INF/classes">
+            <fileset dir="src">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <javac
+                srcdir="src"
+                destdir="war/WEB-INF/classes"
+                classpathref="project.classpath"
+                debug="on"/>
+    </target>
+
+    <target name="compile-test" depends="compile"
+            description="Compiles test source.">
+        <mkdir dir="${build.dir}/test-classes"/>
+        <copy todir="${build.dir}/test-classes">
+            <fileset dir="unit-tests">
+                <exclude name="**/*.java"/>
+            </fileset>
+        </copy>
+        <javac
+                srcdir="unit-tests"
+                destdir="${build.dir}/test-classes"
+                debug="on">
+            <classpath>
+                <path refid="project.classpath"/>
+                <path refid="test.classpath"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="js-unit-tests">
+        <java fork="true" jar="lib/test/rhino/js.jar" failonerror="true">
+            <arg value="js-tests/tests.js"/>
+            <jvmarg value="-Dfile.encoding=utf-8"/>
+        </java>
+    </target>
+
+    <target name="unit-tests" depends="clean, compile-test,datanucleusenhance"
+            description="Compiles sources and runs tests.">
+        <mkdir dir="${build.dir}/reports"/>
+        <junit failureproperty="tests.have.failed" errorproperty="tests.have.failed"
+               fork="yes" forkmode="perBatch" dir="${basedir}">
+            <formatter usefile="false" type="brief"/>
+            <formatter usefile="true" type="xml"/>
+            <batchtest fork="yes" todir="${build.dir}/reports">
+                <fileset dir="unit-tests">
+                    <include name="**/*Tests.java"/>
+                    <include name="**/*Test.java"/>
+                    <exclude name="**/CompassSearchTest.java"/>
+                </fileset>
+            </batchtest>
+            <classpath>
+                <path refid="project.classpath"/>
+                <path refid="test.classpath"/>
+            </classpath>
+        </junit>
+
+        <junit failureproperty="tests.have.failed" errorproperty="tests.have.failed"
+               fork="yes" forkmode="perBatch" dir="${basedir}">
+            <formatter usefile="false" type="brief"/>
+            <formatter usefile="true" type="xml"/>
+            <batchtest fork="yes" todir="${build.dir}/reports">
+                <fileset dir="unit-tests">
+                    <include name="**/CompassSearchTest.java"/>
+                </fileset>
+            </batchtest>
+            <classpath>
+                <path refid="project.classpath"/>
+                <path refid="test.classpath"/>
+            </classpath>
+        </junit>
+        <fail if="tests.have.failed"/>
+    </target>
+
+    <target name="start-selenium-server">
+        <java jar="lib/test/selenium-server.jar"
+              fork="true" spawn="true">
+            <arg line="-timeout 30 -multiWindow"/>
+        </java>
+    </target>
+
+    <target name="stop-selenium-server">
+        <get taskname="selenium-shutdown"
+             src="http://localhost:4444/selenium-server/driver/?cmd=shutDown"
+             dest="/dev/null" ignoreerrors="true"/>
+    </target>
+
+    <target name="compile-functional-tests"
+            description="Compiles test source.">
+        <mkdir dir="${build.dir}/test-classes"/>
+        <javac
+                srcdir="functional-tests"
+                destdir="${build.dir}/test-classes"
+                debug="on">
+            <classpath>
+                <path refid="test.classpath"/>
+            </classpath>
+        </javac>
+    </target>
+
+    <target name="deletedb">
+        <delete file="${basedir}/war/WEB-INF/appengine-generated/local_db.bin"/>
+    </target>
+
+    <target name="selenium-tests" depends="compile-functional-tests" description="Runs selenium tests.">
+        <parallel>
+            <antcall target="start-selenium-server"/>
+            <sequential>
+                <mkdir dir="${build.dir}/reports/functional-tests"/>
+                <echo taskname="waitfor" message="Wait for proxy server launch"/>
+                <waitfor maxwait="2" maxwaitunit="minute" checkevery="5" checkeveryunit="second">
+                    <http url="http://localhost:4444/selenium-server/driver/?cmd=testComplete"/>
+                </waitfor>
+                <echo message="Using browser.string=${browser.string}, base.url=${base.url}"/>
+
+                <junit printsummary="yes" errorproperty="tests.have.failed" failureproperty="tests.have.failed">
+                    <sysproperty key="browser.string" value="${browser.string}"/>
+                    <sysproperty key="base.url" value="${base.url}"/>
+                    <sysproperty key="local.db" value="${local.db}"/>
+                    <classpath refid="test.classpath"/>
+                    <formatter type="xml" usefile="yes"/>
+                    <batchtest fork="yes" todir="${build.dir}/reports/functional-tests">
+                        <fileset dir="functional-tests">
+                            <include name="**/*Tests.java"/>
+                            <include name="**/*Test.java"/>
+                        </fileset>
+                    </batchtest>
+                </junit>
+
+                <antcall target="stop-selenium-server"/>
+            </sequential>
+        </parallel>
+
+    </target>
+
+    <target name="datanucleusenhance" depends="compile"
+            description="Performs enhancement on compiled data classes.">
+        <enhance_war war="war"/>
+    </target>
+
+    <target name="runserver" depends="datanucleusenhance"
+            description="Starts the development server.">
+        <dev_appserver war="war"/>
+    </target>
+
+    <target name="update" depends="datanucleusenhance"
+            description="Uploads the application to App Engine.">
+        <appcfg action="update" war="war"/>
+    </target>
+
+    <target name="update_indexes" depends="datanucleusenhance"
+            description="Uploads just the datastore index configuration to App Engine.">
+        <appcfg action="update_indexes" war="war"/>
+    </target>
+
+    <target name="rollback" depends="datanucleusenhance"
+            description="Rolls back an interrupted application update.">
+        <appcfg action="rollback" war="war"/>
+    </target>
+
+    <target name="request_logs"
+            description="Downloads log data from App Engine for the application.">
+        <appcfg action="request_logs" war="war">
+            <options>
+                <arg value="--num_days=5"/>
+            </options>
+            <args>
+                <arg value="logs.txt"/>
+            </args>
+        </appcfg>
+    </target>
+
+</project>
+

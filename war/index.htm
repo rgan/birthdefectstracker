@@ -1,0 +1,214 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:v="urn:schemas-microsoft-com:vml">
+<head>
+    <link href="css/birthdefects.css" title="escape" rel="stylesheet" type="text/css"/>
+    <link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css"/>
+    <link type="text/css" href="css/smoothness/jquery-ui-1.8.7.custom.css" rel="stylesheet" />	
+	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+    <script type="text/javascript" src="js/jquery-ui-1.8.7.custom.min.js"></script>
+    <script type="text/javascript" src="js/json_sans_eval.js"></script>
+    <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
+    <!--[if IE]><script language="javascript" type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
+    <script type="text/javascript" src="js/jquery.flot.js"></script>
+    <script type="text/javascript" src="js/utils.js"></script>
+    <script type="text/javascript" src="js/overlaysCache.js"></script>
+    <script type="text/javascript" src="js/birthDefects.js"></script>
+    <script type="text/javascript" src="js/persons.js"></script>
+    <script type="text/javascript" src="js/hazards.js"></script>
+    <script type="text/javascript" src="js/common.js"></script>
+    <script type="text/javascript" src="js/user.js"></script>
+    <script src="js/jquery.simplemodal-1.3.js" type="text/javascript"></script>
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=ABQIAAAACdRRXK7NXPnq1up2FKcnMBRaocTOPuM9HRuzK4fY92iN2TTwpBT8reePu2gMmF4e0uwWzgdYP_-mLg"
+            type="text/javascript"></script>
+    <script type="text/javascript" src="js/dragzoom.js"></script>
+    <script type="text/javascript" src="js/maptools.js"></script>
+    <script type="text/javascript">
+			$(function(){
+				// Accordion
+				$("#accordion").accordion({ header: "h3" });
+			});
+		</script>
+</head>
+<body onload="load()" onunload="GUnload()">
+<div id="textbox">
+    <p class="alignleft"><span class="subtitle">BIRTH DEFECTS TRACKER</span></p>
+
+    <p class="alignright">
+        <span id="loadingMessage" class="loadmsg"></span>
+        &nbsp;&nbsp;<span align="right" id="loggedInMessage"></span>
+        |<span id="login_button"><a href="javascript:Users.showLoginForm()">Login</a></span>
+        <span id="logout_button">|&nbsp;&nbsp;<a href="javascript:logout()">Logout</a></span>
+        |&nbsp;&nbsp;<span id="register_button"><a href="javascript:Users.showAddUserForm()">Register</a></span>
+        |&nbsp;&nbsp;<span id="instructions"><a href="instructions.pdf">Download Instructions</a>
+    </p>
+
+    <div style="clear: both;"></div>
+</div>
+<div>
+        There are very few birth defects with a known definite link to environmental hazards. But being able to share
+        data about when and where birth
+        defects happen will help scientists and public officials .. <a href="javascript:openWindow('about.htm')">Read
+        more</a>
+</div>
+<div id="main">
+    <div id="menucol">
+        <!-- Accordion -->
+		<div id="accordion">
+            <div>
+                <h3><a href="#">Search Hazards</a></h3>
+                <div id="searchHazards" class="content">
+                    <form action="javascript:EnvHazards.search()">
+                        <div id="search_hazard_errors"></div>
+                        <div class="fieldgroup">
+                            <label for="search_hazards_text">Name/Desc/Industry classification (<a
+                                    href="javascript:openWindow('NAIC.htm')">NAIC</a>)</label>
+                            <input type="text" size=20 maxlength="60" id="search_hazards_text"/>
+                         </div>
+                         <p>
+                            <input type="submit" value="Search Hazards"/>
+                         </p>
+                    </form>
+                </div>
+            </div>
+            <div>
+                <h3><a href="#">Search Persons</a></h3>
+                <div id="searchPersons">
+                    <form action="javascript:Persons.search()">
+                        <div id="search_errors"></div>
+                        <div class="fieldgroup">
+                            <label for="search_fromdate">Date from:</label>
+                            <input type="text" size=8 maxlength="10" id="search_fromdate"/><br>(yyyy-MM-dd)
+                        </div>
+                        <div class="fieldgroup">
+                            <label for="search_todate">To:</label>
+                            <input type="text" size=8 maxlength="10" id="search_todate"/><br>(yyyy-MM-dd)
+                        </div>
+                        <div class="fieldgroup">
+                            <label for="search_defects">Birth Defect type:</label>
+                            <select id="search_defects" size="3" name="search_defects">
+                                    <option>Select a defect</option>
+                            </select>             
+                        </div>
+                        <div class="fieldgroup">
+                            <input type="checkbox" id="search_onlyLoggedInUser" value="y"/>Only current users data.
+                        </div>
+                        <div class="fieldgroup">
+                            <input type="submit" value="Search"/>
+                        </div>
+                    </form>
+                </div>
+            </div>
+			<div>
+				<h3><a href="#">Add Person</a></h3>
+                <div id="addPerson">
+
+                        <div id="add_person_errors" class="errors"></div>
+
+                        <form id="add_person_form" action="javascript:Persons.save();">
+                            <input type="hidden" name="person_id" id="person_id"/>
+                            <div class="fieldgroup">
+                                <label for="person_name">Name:</label>
+                                <input type="text" size="20" maxlength="80" id="person_name" name="person_name"/>
+                            </div>
+                            <p>Use map to populate lat/lon</p>
+                            <div class="fieldgroup">
+                                <label for="person_lat">Lat</label>
+                                <input type="text" size="4" id="person_lat" name="person_lat"/>
+                            </div>
+                            <div class="fieldgroup">
+                                <label for="person_lon">Lon</label>
+                                <input type="text" size="4" id="person_lon" name="person_lon"/>
+                            </div>
+                            <div class="fieldgroup">
+                               <label for="person_dateOfBirth">Date of Birth (yyyy-MM-dd)</label>
+                                <input id="person_dateOfBirth" name="person_dateOfBirth" type="text" size="10" maxlength="10"/>
+                            </div>
+                            <div class="fieldgroup">
+                               <label for="person_defects">Birth Defects:</label>
+                               <select id="person_defects" size="3" name="person_defects" multiple="true">
+                                    <option>Select a defect</option>
+                               </select>
+                            </div>
+                            <div class="fieldgroup">
+                                <input type="submit" value="Save Person"/>
+                            </div>
+                        </form>
+                    </div>                
+			</div>
+			<div>
+                <h3><a href="#">Add Enviroment Hazard</a></h3>
+                <div id="addEnvHazard">
+                    <div id="add_envhazard_errors" class="errors"></div>
+
+                    <form id="add_envhazard_form" action="javascript:EnvHazards.save();">
+                        <input type="hidden" name="envhazard_bbox"/>
+                        <div class="fieldgroup">
+                            <label for="envhazard_name">Name:</label>
+                            <input id="envhazard_name" name="envhazard_name" type="text" size="20" maxlength="80"/>
+                        </div>
+                        <div class="fieldgroup">
+                            <label for="envhazard_naic">Industry category (<a href="javascript:openWindow('NAIC.htm')">NAIC</a>):</label>
+                            <input id="envhazard_naic" name="envhazard_naic" type="text" size="20" maxlength="80"/>
+                        </div>
+                        <div class="fieldgroup">
+                            <label for="envhazard_desc">Description:</label>
+                            <textarea cols="15" rows="2" id="envhazard_desc" name="envhazard_desc"></textarea>
+                        </div>
+                        <div class="fieldgroup">
+                            <label for="envhazard_desc">Use map to identify area.</label>
+                            <textarea cols="17" rows="1" id="envhazard_vertices" name="envhazard_vertices" readonly></textarea>
+                        </div>
+                        <div class="fieldgroup">
+                            <input type="submit" value="Save"/>
+                        </div>
+                    </form>
+                </div>
+            </div>  
+            <div>
+                <h3><a href="#">Add a Birth Defect type</a></h3>
+                <div id="addBirthDefectForm">
+                    <div id="add_birth_defect_errors" class="errors"></div>
+                    <form id="new_defect_form" action="javascript:BirthDefects.add();">
+                        <table>
+                            <tr>
+                                <td>Name (*):&nbsp;<input type="text" size="15" maxlength="80" id="birth_defect_name"
+                                                          name="birth_defect_name"/></td>
+                            </tr>
+                            <tr>
+                                <td>Code (*):&nbsp;<input type="text" id="birth_defect_code" name="birth_defect_code"
+                                                          size="20"
+                                                          maxlength="10"/>
+                                    <br><input type="submit" value="Add Defect"/></td>
+                            </tr>
+                        </table>
+                    </form>
+                </div>
+            </div>
+		</div>
+</div>
+<div id="mapresultscol">
+    <div id="mapcol">
+        <ul id="icons">
+            <li><span id="hand_b" class="ui-icon hand_b"
+             onclick="stopEditing()"></span></li>
+            <li><span id="placemark_b" class="ui-icon placemark_b"
+             onclick="placeMarker()"></span></li>
+            <li><span id="shape_b" class="ui-icon shape_b"
+             onclick="startShape()"></span></li>
+            <li><span id="erase_b" class="ui-icon erase_b"
+             onclick="erase()"></span></li>
+            <li><span id="fullextent_b" class="ui-icon fullextent_b" onclick="fullExtent()"></span>
+        </ul>
+        <div id="map" style="width:600px;height:400px"></div>
+        <div id="graph" style="width:600px;height:100px;"></div>
+    </div>
+    <div id="resultscol">
+        <h3>Results</h3>
+        <div id="spatial_search_results"></div>
+        <div id="search_results"></div>
+    </div>
+</div>
+</div>
+</body>
+</html>

@@ -1,0 +1,152 @@
+.alignleft {
+float: left;
+}
+.alignright {
+float: right;
+}
+
+span.hand_b {
+  width:31px;
+  height:31px;
+  background-image: url(Bsu.png);
+}
+span.hand_b.selected {
+  background-image: url(Bsd.png);
+}
+span.erase_b {
+  width:16px;
+  height:16px;
+  background-image: url(Erase2.gif);
+}
+span.fullextent_b {
+  width:16px;
+  height:16px;
+  background-image: url(FE.gif);
+}
+span.shape_b {
+  width:31px;
+  height:31px;
+  background-image: url(Bpu.png);
+}
+span.shape_b.selected {
+  background-image: url(Bpd.png);
+}
+
+span.placemark_b {
+  width:31px;
+  height:31px;
+  background-image: url(Bmu.png);
+}
+span.placemark_b.selected {
+  background-image: url(Bmd.png);
+}
+
+body {
+    background-color: #fff;
+    color: #333;
+}
+
+body, p, ol, ul, td {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 0.75em;
+    line-height: 18px;
+}
+
+.subtitle {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.loadmsg {
+    font-family: verdana, arial, helvetica, sans-serif;
+    font-weight: bold;
+    color: #ff0000;
+    white-space: pre;
+}
+
+.errors {
+   font-family: verdana, arial, helvetica, sans-serif;
+   font-weight: normal;
+   color: #ff0000; 
+}
+
+tr.d0 td {
+	background-color: #FCF6CF;
+    color: black;
+    border: 1px solid black;
+}
+
+tr.d1 td { border: 1px solid black; }
+
+table.searchresults {
+    background-color: #FEFEF2;    
+    width: 100%;
+    white-space: normal;
+    overflow: hidden;
+    border: 1px solid black;    
+    border-width: 2px;
+    padding: 2px;
+}
+
+#simplemodal-overlay {
+    background-color:#000;
+}
+
+#simplemodal-container {
+    background-color:#fff; border:8px solid #000; padding:12px; text-align:left
+}
+
+#main {
+	background: #fff;
+	padding: 15px;
+	float: left;
+	width: 950px;
+}
+
+#menucol {
+	float: left;
+	width: 20%;
+}
+
+#mapresultscol {
+	float: right;
+	width: 80%;
+}
+
+#mapcol {
+	float: left;
+	width: 80%;
+}
+
+#resultscol {
+	float: right;
+	width: 20%;
+}
+
+#mapmenu {
+   height: 40px;
+   width: 400px;
+}
+
+.fieldgroup {
+	float: left;
+    font-size: .8em;    
+	margin: 10px 4px 0 0;
+}
+
+.content {
+	padding: 10px 5px 10px 23px;
+	border-top: 0 !important;
+}
+
+.errors {
+   font-size: .8em; 
+}
+
+ul#icons {margin: 0; padding: 0;}
+ul#icons li {margin: 2px; position: relative; padding: 4px 0; cursor: pointer; float: left;  list-style: none;}
+ul#icons span.ui-icon {float: left; margin: 0 4px;}
+
+
+
