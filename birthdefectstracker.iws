@@ -77,19 +77,28 @@
   <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="birthDefects.htm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/birthDefects.htm">
+      <file leaf-file-name="index.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/index.htm">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+            <state line="24" column="19" selection-start="1790" selection-end="1790" vertical-scroll-proportion="-10.555555">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.htm" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/war/index.htm">
+      <file leaf-file-name="main_page.js" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/bdtui/apps/bdtui/resources/main_page.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="213" column="7" selection-start="11418" selection-end="11418" vertical-scroll-proportion="6.689256">
+            <state line="25" column="14" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.21044303">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hazard_view.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/bdtui/apps/bdtui/resources/hazard_view.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="42" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -109,9 +118,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/unit-tests/org/healthapps/birthdefects/model/BirthDefectTest.java" />
-        <option value="$PROJECT_DIR$/unit-tests/org/healthapps/birthdefects/dao/AbstractTestDao.java" />
-        <option value="$PROJECT_DIR$/unit-tests/org/healthapps/birthdefects/dao/CompassSearchTest.java" />
         <option value="$PROJECT_DIR$/unit-tests/org/healthapps/birthdefects/web/BirthDefectControllerBaseTestCase.java" />
         <option value="$PROJECT_DIR$/unit-tests/org/healthapps/birthdefects/web/BirthDefectControllerTest.java" />
         <option value="$PROJECT_DIR$/war/js/common.js" />
@@ -125,6 +131,9 @@
         <option value="$PROJECT_DIR$/war/js/hazards.js" />
         <option value="$PROJECT_DIR$/war/css/birthdefects.css" />
         <option value="$PROJECT_DIR$/war/index.htm" />
+        <option value="$PROJECT_DIR$/bdtui/apps/bdtui/resources/loading.rhtml" />
+        <option value="$PROJECT_DIR$/bdtui/apps/bdtui/resources/main_page.js" />
+        <option value="$PROJECT_DIR$/bdtui/apps/bdtui/resources/hazard_view.js" />
       </list>
     </option>
   </component>
@@ -206,7 +215,55 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
+              <option name="myItemId" value="bdtui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="birthdefectstracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="birthdefectstracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bdtui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bdtui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="birthdefectstracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="birthdefectstracker" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bdtui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="apps" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bdtui" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -790,7 +847,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="33" width="1331" height="770" extended-state="0" />
+    <frame x="68" y="27" width="1331" height="770" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -868,31 +925,6 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/war/js/birthDefects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="982" selection-end="982" vertical-scroll-proportion="0.97938144" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/healthapps/birthdefects/web/PersonBirthDefectsPropertyEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/js/maptools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/css/birthdefects.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="1" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="10" selection-start="2974" selection-end="2974" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/healthapps/birthdefects/model/CSquareCode.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="2" column="13" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" />
@@ -954,7 +986,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/war/index.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="7" selection-start="11418" selection-end="11418" vertical-scroll-proportion="6.689256">
+        <state line="24" column="19" selection-start="1790" selection-end="1790" vertical-scroll-proportion="-10.555555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdtui/apps/bdtui/resources/loading.rhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="5" column="2" selection-start="328" selection-end="328" vertical-scroll-proportion="0.14683153">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdtui/Buildfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdtui/apps/bdtui/resources/hazard_view.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="42" selection-start="277" selection-end="277" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/bdtui/apps/bdtui/resources/main_page.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="25" column="14" selection-start="1083" selection-end="1083" vertical-scroll-proportion="0.21044303">
           <folding />
         </state>
       </provider>
