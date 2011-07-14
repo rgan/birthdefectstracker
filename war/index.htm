@@ -5,7 +5,7 @@
     <link href="css/birthdefects.css" title="escape" rel="stylesheet" type="text/css"/>
     <link rel="stylesheet" type="text/css" href="css/jquery.autocomplete.css"/>
     <link type="text/css" href="css/smoothness/jquery-ui-1.8.7.custom.css" rel="stylesheet" />	
-	<script type="text/javascript" src="js/jquery-1.4.4.min.js"></script>
+	<script type="text/javascript" src="js/jquery-1.6.2.min.js"></script>
     <script type="text/javascript" src="js/jquery-ui-1.8.7.custom.min.js"></script>
     <script type="text/javascript" src="js/json_sans_eval.js"></script>
     <script type="text/javascript" src="js/jquery.autocomplete.js"></script>
@@ -26,7 +26,7 @@
     <script type="text/javascript">
 			$(function(){
 				// Accordion
-				$("#accordion").accordion({ header: "h3" });
+				$("#accordion").accordion({ header: "h3" , fillSpace: true });
 			});
 		</script>
 </head>
@@ -40,7 +40,7 @@
         |<span id="login_button"><a href="javascript:Users.showLoginForm()">Login</a></span>
         <span id="logout_button">|&nbsp;&nbsp;<a href="javascript:logout()">Logout</a></span>
         |&nbsp;&nbsp;<span id="register_button"><a href="javascript:Users.showAddUserForm()">Register</a></span>
-        |&nbsp;&nbsp;<span id="instructions"><a href="instructions.pdf">Download Instructions</a>
+        |&nbsp;&nbsp;<span id="instructions"><a href="instructions.pdf">Download Instructions</a></span>
     </p>
 
     <div style="clear: both;"></div>
@@ -111,14 +111,10 @@
                                 <label for="person_name">Name:</label>
                                 <input type="text" size="20" maxlength="80" id="person_name" name="person_name"/>
                             </div>
-                            <p>Use map to populate lat/lon</p>
                             <div class="fieldgroup">
-                                <label for="person_lat">Lat</label>
-                                <input type="text" size="4" id="person_lat" name="person_lat"/>
-                            </div>
-                            <div class="fieldgroup">
-                                <label for="person_lon">Lon</label>
-                                <input type="text" size="4" id="person_lon" name="person_lon"/>
+                                <label for="person_lat">Use map to populate lat/lon:</label>
+                                <input type="text" size="1" id="person_lat" name="person_lat"/> /
+                                <input type="text" size="1" id="person_lon" name="person_lon"/>
                             </div>
                             <div class="fieldgroup">
                                <label for="person_dateOfBirth">Date of Birth (yyyy-MM-dd)</label>
@@ -200,7 +196,7 @@
              onclick="erase()"></span></li>
             <li><span id="fullextent_b" class="ui-icon fullextent_b" onclick="fullExtent()"></span>
         </ul>
-        <div id="map" style="width:600px;height:400px"></div>
+        <div id="map" style="top:45px;width:600px;height:400px"></div>
         <div id="graph" style="width:600px;height:100px;"></div>
     </div>
     <div id="resultscol">

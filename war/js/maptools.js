@@ -2,10 +2,10 @@
 var POLY_COLOR = "#008000";
 
 function select(buttonId) {
-    document.getElementById("hand_b").className = "unselected";
-    document.getElementById("shape_b").className = "unselected";
-    document.getElementById("placemark_b").className = "unselected";
-    document.getElementById(buttonId).className = "selected";
+    $("#hand_b").removeClass("selected");
+    $("#shape_b").removeClass("selected");
+    $("#placemark_b").removeClass("selected");
+    $("#" + buttonId).addClass("selected");
 }
 
 function stopEditing() {

@@ -13,6 +13,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ChangesViewManager" flattened_view="true" show_ignored="false" />
+  <component name="CoverageDataManager" choice="3" />
   <component name="CreatePatchCommitExecutor">
     <option name="PATCH_PATH" value="" />
     <option name="REVERSE_PATCH" value="false" />
@@ -74,11 +75,88 @@
   <component name="FavoritesManager">
     <favorites_list name="birthdefectstracker" />
   </component>
-  <component name="FileColors" enabled="true" enabledForTabs="true" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="birthDefects.htm" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/war/birthDefects.htm">
+      <file leaf-file-name="index.htm" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/index.htm">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="28" column="41" selection-start="1911" selection-end="1936" vertical-scroll-proportion="-9.142858">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="maptools.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/js/maptools.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="12" column="6" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="persons.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/js/persons.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="182" column="34" selection-start="7283" selection-end="7283" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="birthdefects.css" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/css/birthdefects.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="103" column="13" selection-start="1753" selection-end="1753" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="common.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/js/common.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="175" column="43" selection-start="5096" selection-end="5096" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="appengine-web.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/WEB-INF/appengine-web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="19" column="0" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext-security.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/WEB-INF/applicationContext-security.xml">
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="applicationContext.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/WEB-INF/applicationContext.xml">
+          <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+            <state />
+          </provider>
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="43" selection-start="192" selection-end="192" vertical-scroll-proportion="-1.6363636">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="datastore-indexes.xml" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/war/WEB-INF/datastore-indexes.xml">
           <provider selected="true" editor-type-id="text-editor">
             <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
               <folding />
@@ -86,12 +164,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.htm" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/war/index.htm">
+      <file leaf-file-name="web.xml" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+            <state />
+          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state line="213" column="7" selection-start="11418" selection-end="11418" vertical-scroll-proportion="6.689256">
+            <state line="58" column="10" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.81619257">
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+            <state />
+          </provider>
+          <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+            <state />
           </provider>
         </entry>
       </file>
@@ -109,22 +196,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/unit-tests/org/healthapps/birthdefects/model/BirthDefectTest.java" />
-        <option value="$PROJECT_DIR$/unit-tests/org/healthapps/birthdefects/dao/AbstractTestDao.java" />
-        <option value="$PROJECT_DIR$/unit-tests/org/healthapps/birthdefects/dao/CompassSearchTest.java" />
-        <option value="$PROJECT_DIR$/unit-tests/org/healthapps/birthdefects/web/BirthDefectControllerBaseTestCase.java" />
-        <option value="$PROJECT_DIR$/unit-tests/org/healthapps/birthdefects/web/BirthDefectControllerTest.java" />
-        <option value="$PROJECT_DIR$/war/js/common.js" />
         <option value="$PROJECT_DIR$/src/org/healthapps/birthdefects/dao/BirthDefectsDao.java" />
         <option value="$PROJECT_DIR$/src/org/healthapps/birthdefects/dao/BirthDefectsDaoImpl.java" />
         <option value="$PROJECT_DIR$/src/org/healthapps/birthdefects/web/BirthDefectController.java" />
         <option value="$PROJECT_DIR$/src/org/healthapps/birthdefects/web/PersonBirthDefectsPropertyEditor.java" />
         <option value="$PROJECT_DIR$/unit-tests/org/healthapps/birthdefects/web/PersonBirthDefectsPropertyEditorTest.java" />
         <option value="$PROJECT_DIR$/war/WEB-INF/web.xml" />
-        <option value="$PROJECT_DIR$/war/js/persons.js" />
         <option value="$PROJECT_DIR$/war/js/hazards.js" />
-        <option value="$PROJECT_DIR$/war/css/birthdefects.css" />
+        <option value="$PROJECT_DIR$/war/WEB-INF/applicationContext.xml" />
+        <option value="$PROJECT_DIR$/war/WEB-INF/appengine-web.xml" />
+        <option value="$PROJECT_DIR$/war/WEB-INF/logging.properties" />
+        <option value="$PROJECT_DIR$/build.properties" />
         <option value="$PROJECT_DIR$/war/index.htm" />
+        <option value="$PROJECT_DIR$/war/js/maptools.js" />
+        <option value="$PROJECT_DIR$/war/css/birthdefects.css" />
+        <option value="$PROJECT_DIR$/war/js/persons.js" />
+        <option value="$PROJECT_DIR$/war/js/common.js" />
       </list>
     </option>
   </component>
@@ -137,7 +224,7 @@
       <profile-state />
     </entry>
   </component>
-  <component name="ProjectLevelVcsManager">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -177,7 +264,8 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
+      <pane id="Favorites" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -206,14 +294,13 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="war" />
+              <option name="myItemId" value="WEB-INF" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Favorites" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -229,16 +316,16 @@
     <property name="recentsLimit" value="5" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../../../../Desktop" />
     <property name="project.structure.side.proportion" value="0.2" />
-    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.includeJavaFiles" value="false" />
+    <property name="MemberChooser.copyJavadoc" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.testIntegration.createTest.CreateTestDialog.includeInheritedMembers" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
-    <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.splitter.details.proportions" value="0.2" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="MoveMembersDialog.RECENTS_KEY">
@@ -261,15 +348,6 @@
     </key>
   </component>
   <component name="RunManager" selected="JUnit.PersonUIAdaptorTest">
-    <configuration default="true" type="PhpRunConfigurationType" factoryName="PHP">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="ValidateXdebugSetup" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
       <method>
         <option name="AntTarget" enabled="false" />
@@ -290,17 +368,26 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" air_descriptor_path="" air_program_params="" air_publisher_id="" air_root_dir_path="" air_run_mode="AppDescriptor" class_name="" html_or_swf_file_path="" main_class_name="" method_name="" module_name="" output_log_level="" package_name="" port="0" run_mode="HtmlOrSwfFile" scope="Class" socket_policy_port="0" url_to_launch="http://">
+    <configuration default="true" type="Applet" factoryName="Applet">
+      <module name="" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="HTML_FILE_NAME" />
+      <option name="HTML_USED" value="false" />
+      <option name="WIDTH" value="400" />
+      <option name="HEIGHT" value="300" />
+      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
+      <option name="VM_PARAMETERS" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="true" />
+        <option name="Make" enabled="false" />
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
     <configuration default="true" type="TestNG" factoryName="TestNG">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -332,27 +419,8 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="Applet" factoryName="Applet">
-      <module name="" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="HTML_FILE_NAME" />
-      <option name="HTML_USED" value="false" />
-      <option name="WIDTH" value="400" />
-      <option name="HEIGHT" value="300" />
-      <option name="POLICY_FILE" value="$APPLICATION_HOME_DIR$/bin/appletviewer.policy" />
-      <option name="VM_PARAMETERS" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Make" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
     <configuration default="true" type="Application" factoryName="Application">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <option name="MAIN_CLASS_NAME" />
       <option name="VM_PARAMETERS" />
       <option name="PROGRAM_PARAMETERS" />
@@ -371,29 +439,8 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
-    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
-      <JSDebuggerConfigurationSettings>
-        <option name="engineId" value="embedded" />
-        <option name="fileUrl" />
-      </JSDebuggerConfigurationSettings>
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-      </method>
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
-      <method>
-        <option name="AntTarget" enabled="false" />
-        <option name="BuildArtifacts" enabled="false" />
-        <option name="FtpUpload" enabled="false" />
-        <option name="Maven.BeforeRunTask" enabled="false" />
-        <option name="ValidateXdebugSetup" enabled="true" />
-      </method>
-    </configuration>
     <configuration default="true" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -410,6 +457,7 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <method>
         <option name="AntTarget" enabled="false" />
         <option name="BuildArtifacts" enabled="false" />
@@ -417,9 +465,31 @@
         <option name="Maven.BeforeRunTask" enabled="false" />
       </method>
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server">
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="FtpUpload" enabled="false">
+          <server_id />
+          <server_name />
+        </option>
+        <option name="Maven.BeforeRunTask" enabled="false" />
+        <option name="ValidateXdebugSetup" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="JavascriptDebugSession" factoryName="Local">
+      <JSDebuggerConfigurationSettings>
+        <option name="engineId" value="embedded" />
+        <option name="fileUrl" />
+      </JSDebuggerConfigurationSettings>
+      <method>
+        <option name="AntTarget" enabled="false" />
+        <option name="BuildArtifacts" enabled="false" />
+        <option name="Maven.BeforeRunTask" enabled="false" />
+      </method>
+    </configuration>
     <configuration default="false" name="BirthDefectsDaoImplTest.testSearchHazards" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="Birthdefectstracker" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -436,13 +506,13 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="CompassSearchTest.testSearchHazards" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="Birthdefectstracker" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
@@ -459,13 +529,13 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="EncryptorTest" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="Birthdefectstracker" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -482,13 +552,13 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="AllTests" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="Birthdefectstracker" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -505,13 +575,13 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="testShouldErrorIfPasswordIsEmpty." type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="Birthdefectstracker" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -528,6 +598,7 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="54302" />
         <option name="TRANSPORT" value="0" />
@@ -540,7 +611,6 @@
     </configuration>
     <configuration default="false" name="LoginControllerTest" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="Birthdefectstracker" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -557,13 +627,13 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="UserControllerTest" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="Birthdefectstracker" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -580,6 +650,7 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="54952" />
         <option name="TRANSPORT" value="0" />
@@ -592,7 +663,6 @@
     </configuration>
     <configuration default="false" name="Unnamed" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="Birthdefectstracker" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -609,13 +679,13 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
     </configuration>
     <configuration default="false" name="BirthDefectDaoPersonTest.testShouldDecrementSpatialSummariesWhenPersonIsDeleted" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="Birthdefectstracker" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -632,6 +702,7 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="53024" />
         <option name="TRANSPORT" value="0" />
@@ -644,7 +715,6 @@
     </configuration>
     <configuration default="false" name="TensSummaryDaoTest" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="Birthdefectstracker" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -661,6 +731,7 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="53510" />
         <option name="TRANSPORT" value="0" />
@@ -673,7 +744,6 @@
     </configuration>
     <configuration default="false" name="EmailerTest" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="Birthdefectstracker" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -690,6 +760,7 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Debug">
         <option name="DEBUG_PORT" value="49815" />
         <option name="TRANSPORT" value="0" />
@@ -702,7 +773,6 @@
     </configuration>
     <configuration default="false" name="PersonUIAdaptorTest" type="JUnit" factoryName="JUnit">
       <extension name="coverage" enabled="false" merge="false" runner="emma" />
-      <extension name="snapshooter" />
       <module name="Birthdefectstracker" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" value="" />
@@ -719,6 +789,7 @@
         <value defaultName="wholeProject" />
       </option>
       <envs />
+      <patterns />
       <RunnerSettings RunnerId="Run" />
       <ConfigurationWrapper RunnerId="Run" />
       <method />
@@ -747,7 +818,6 @@
     <option name="USER" value="" />
     <option name="PASSWORD" value="" />
     <option name="LAST_MERGED_REVISION" />
-    <option name="UPDATE_RUN_STATUS" value="false" />
     <option name="MERGE_DRY_RUN" value="false" />
     <option name="MERGE_DIFF_USE_ANCESTRY" value="true" />
     <option name="UPDATE_LOCK_ON_DEMAND" value="false" />
@@ -756,7 +826,8 @@
     <option name="CHECK_NESTED_FOR_QUICK_MERGE" value="false" />
     <option name="IGNORE_SPACES_IN_ANNOTATE" value="true" />
     <option name="SHOW_MERGE_SOURCES_IN_ANNOTATE" value="true" />
-    <configuration useDefault="true">$PROJECT_DIR$/../../../../../.subversion_IDEA</configuration>
+    <option name="FORCE_UPDATE" value="false" />
+    <configuration useDefault="true">$USER_HOME$/.subversion_IDEA</configuration>
     <myIsUseDefaultProxy>false</myIsUseDefaultProxy>
     <supportedVersion>125</supportedVersion>
   </component>
@@ -790,32 +861,32 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="71" y="33" width="1331" height="770" extended-state="0" />
-    <editor active="true" />
+    <frame x="81" y="53" width="1371" height="749" extended-state="0" />
+    <editor active="false" />
     <layout>
-      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16057234" sideWeight="0.98990536" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24938068" sideWeight="0.6602564" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3904899" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24961714" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24043716" sideWeight="0.78846157" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23996972" sideWeight="0.83942765" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.29971182" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Dataflow to this" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25268817" sideWeight="0.98990536" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="IntelliJad Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24207492" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20118344" sideWeight="0.99845916" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="EJB" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Web Preview" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32909605" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -833,6 +904,8 @@
     <option name="CHECK_LOCALLY_CHANGED_CONFLICTS_IN_BACKGROUND" value="false" />
     <option name="ENABLE_BACKGROUND_PROCESSES" value="false" />
     <option name="CHANGED_ON_SERVER_INTERVAL" value="60" />
+    <option name="SHOW_ONLY_CHANGED_IN_SELECTION_DIFF" value="true" />
+    <option name="CHECK_COMMIT_MESSAGE_SPELLING" value="true" />
     <option name="FORCE_NON_EMPTY_COMMENT" value="false" />
     <option name="LAST_COMMIT_MESSAGE" />
     <option name="MAKE_NEW_CHANGELIST_ACTIVE" value="true" />
@@ -868,130 +941,204 @@
     </buildFile>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/war/js/birthDefects.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="25" column="20" selection-start="982" selection-end="982" vertical-scroll-proportion="0.97938144" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/healthapps/birthdefects/web/PersonBirthDefectsPropertyEditor.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="17" selection-start="543" selection-end="543" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/js/maptools.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="29" selection-start="172" selection-end="172" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/css/birthdefects.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="144" column="1" selection-start="2165" selection-end="2165" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/js/common.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="92" column="10" selection-start="2974" selection-end="2974" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/healthapps/birthdefects/model/CSquareCode.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="13" selection-start="57" selection-end="57" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/healthapps/birthdefects/model/CSVLine.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="17" selection-start="61" selection-end="61" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/org/healthapps/birthdefects/web/BirthDefectController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state line="299" column="14" selection-start="14420" selection-end="14420" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/healthapps/birthdefects/dao/BirthDefectsDaoImpl.java">
+    <entry file="file://$PROJECT_DIR$/build.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="224" column="30" selection-start="9364" selection-end="9364" vertical-scroll-proportion="0.0" />
+        <state line="79" column="23" selection-start="2592" selection-end="2592" vertical-scroll-proportion="0.22758621">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+    <entry file="file://$PROJECT_DIR$/build.properties">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="68" selection-start="68" selection-end="68" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/js/utils.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/org/healthapps/birthdefects/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="26" column="13" selection-start="1174" selection-end="1174" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/js/maptools.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="12" column="6" selection-start="370" selection-end="370" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/css/ui-lightness/images/ui-icons_222222_256x240.png">
+      <provider selected="true" editor-type-id="images">
         <state />
       </provider>
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="29" selection-start="1578" selection-end="1578" vertical-scroll-proportion="0.0" />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
-        <state />
-      </provider>
-      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
-        <state />
-      </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/war/WEB-INF/appengine-web.xml">
+    <entry file="file://$PROJECT_DIR$/war/css/birthdefects.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/js/hazards.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="91" column="37" selection-start="3566" selection-end="3566" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/js/persons.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="154" column="83" selection-start="6335" selection-end="6335" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/org/healthapps/birthdefects/model/BirthDefect.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="51" column="9" selection-start="1292" selection-end="1292" vertical-scroll-proportion="0.13382353" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/war/birthDefects.htm">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+        <state line="103" column="13" selection-start="1753" selection-end="1753" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/war/index.htm">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="213" column="7" selection-start="11418" selection-end="11418" vertical-scroll-proportion="6.689256">
+        <state line="28" column="41" selection-start="1911" selection-end="1936" vertical-scroll-proportion="-9.142858">
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/js/persons.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="182" column="34" selection-start="7283" selection-end="7283" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="175" column="43" selection-start="5096" selection-end="5096" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/WEB-INF/appengine-web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="19" column="0" selection-start="658" selection-end="658" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/WEB-INF/applicationContext-security.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/WEB-INF/applicationContext.xml">
+      <provider editor-type-id="com.intellij.spring.perspectives.SpringBeansStructureEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="43" selection-start="192" selection-end="192" vertical-scroll-proportion="-1.6363636">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/WEB-INF/datastore-indexes.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/war/WEB-INF/web.xml">
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleGeneralEditorProvider">
+        <state />
+      </provider>
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="58" column="10" selection-start="1839" selection-end="1839" vertical-scroll-proportion="0.81619257">
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorProvider">
+        <state />
+      </provider>
+      <provider editor-type-id="com.intellij.javaee.module.view.web.viewlets.WebModuleAssemblyDescriptorReferencesProvider">
+        <state />
       </provider>
     </entry>
   </component>
   <component name="masterDetails">
     <states>
       <state key="ArtifactsStructureConfigurable.UI">
-        <UIState>
-          <splitter-proportions>
-            <SplitterProportionsDataImpl>
-              <option name="proportions">
-                <list>
-                  <option value="0.2" />
-                  <option value="0.5" />
-                </list>
-              </option>
-            </SplitterProportionsDataImpl>
-          </splitter-proportions>
+        <settings>
+          <artifact-editor />
           <last-edited>Birthdefectstracker:Web exploded</last-edited>
-          <settings />
-        </UIState>
-      </state>
-      <state key="Copyright.UI">
-        <UIState>
           <splitter-proportions>
-            <SplitterProportionsDataImpl />
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
           </splitter-proportions>
-        </UIState>
+        </settings>
       </state>
-      <state key="ScopeChooserConfigurable.UI">
-        <UIState>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Android</last-edited>
           <splitter-proportions>
-            <SplitterProportionsDataImpl />
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
           </splitter-proportions>
-          <settings />
-        </UIState>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.6</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>Birthdefectstracker</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>lib1</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
       </state>
     </states>
   </component>

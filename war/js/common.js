@@ -25,14 +25,8 @@ function load() {
 
 function enableDisableMapTools(zoom) {
     if (zoom >= TOOLS_ENABLED_ZOOM_LEVEL) {
-        if ($('#addPerson').is(":visible")) {
-            $('#placemark_b').show();
-            $('#shape_b').hide();
-        }
-        if ($('#addEnvHazard').is(":visible")) {
-            $('#shape_b').show();
-            $('#placemark_b').hide();
-        }
+        $('#placemark_b').show();
+        $('#shape_b').show();
     } else {
         $('#shape_b').hide();
         $('#placemark_b').hide();
@@ -95,7 +89,9 @@ function enablePersonForm() {
 
 function disablePersonForm() {
     $('#addPerson').hide();
-    enableDisableMapTools(map.getZoom());
+    if (map) {
+        enableDisableMapTools(map.getZoom());
+    }
 }
 
 function clearAllMessages() {
@@ -168,18 +164,16 @@ function doPostLoginLogout(isLoggedIn, username) {
     $('#spatial_search_results').html('');
     $('#search_results').html('');
     if (isLoggedIn) {
-        $('#person_menu').show();
-        $('#hazards_menu').show();
         $('#logout_button').show();
         $('#loggedInMessage').html("Welcome, " + username);
-        enablePersonForm();
     } else {
         $('#logout_button').hide();
-        $('#person_menu').hide();
-        $('#hazards_menu').show();
         $('#loggedInMessage').html("");
-        disablePersonForm();
     }
+}
+
+function showPersonsForm() {
+    $("#accordion").accordion("activate", 2);
 }
 
 $(document).ready(function() {

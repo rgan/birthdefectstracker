@@ -107,6 +107,7 @@ table.searchresults {
 #menucol {
 	float: left;
 	width: 20%;
+    height:500px;
 }
 
 #mapresultscol {

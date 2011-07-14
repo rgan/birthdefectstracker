@@ -7,14 +7,14 @@ var Persons = function() {
         if (person.name == '') {
             return '';
         }
-        return '<a class="ui-icon ui-icon-gear" href="javascript:Persons.edit(' + person.id + ')"></a>';
+        return '<a href="javascript:Persons.edit(' + person.id + ')">Edit</a>';
     };
 
-    var getDeleteLink = function(row, person) {
+    var getDeleteLink = function(rowId, person) {
         if (person.name == '') {
             return '';
         }
-        return '<a class="ui-icon ui-icon-trash" href="javascript:Persons.remove(' + (row + 1) + ',' + person.id + ')"></a>';
+        return '<a href="javascript:Persons.remove(\'' + rowId + '\',' + person.id + ')">Delete</a>';
     };
 
     var getMapLink = function(person) {
@@ -23,14 +23,14 @@ var Persons = function() {
             var bounds = poly.getBounds();
             var ne = bounds.getNorthEast();
             var sw = bounds.getSouthWest();
-            return '<a class="ui-icon ui-icon-image" href="javascript:Persons.gotoBBox(' + ne.lat() + ',' + ne.lng() + ',' + sw.lat() + ',' + sw.lng() + ')"></a>';
+            return '<a href="javascript:Persons.gotoBBox(' + ne.lat() + ',' + ne.lng() + ',' + sw.lat() + ',' + sw.lng() + ')">Map</a>';
         }
-        return '<a class="ui-icon ui-icon-image" href="javascript:Persons.gotoLatLng(' + person.lat + ',' + person.lon + ')"></a>';
+        return '<a href="javascript:Persons.gotoLatLng(' + person.lat + ',' + person.lon + ')">Map</a>';
     };
 
     var getEmailLink = function(person) {
         if (person.name == '') {
-            return '<a href="javascript:Users.showSendMailForm(' + person.createdById + ')"><span class="ui-icon ui-icon-mail-closed"></span></a>';
+            return '<a href="javascript:Users.showSendMailForm(' + person.createdById + ')">Email</a>';
         }
         return '';
     };
@@ -139,17 +139,18 @@ var Persons = function() {
             var title = '<p>' + title + ' ' + downloadLink + '</p>';
             html = '<div id="">';
             $.each(personsOrHazards, function(i, item) {
+                var rowId = "p_" + item.id;
+                html += '<div id="' + rowId + '">';
                 if (item.dateOfBirth) { // must be person
                     html += item.name + '(' + item.dateOfBirth + ')';
-                    html += '<div>' + item.birthDefects;
-                    html += getMapLink(item);
-                    html += getEmailLink(item);
-                    html += getEditLink(item);
-                    html += getDeleteLink(i, item);
+                    html += ' ' + item.birthDefects;
+                    html += ' ' +getMapLink(item);
+                    html += ' ' +getEmailLink(item);
+                    html += ' ' +getEditLink(item);
+                    html += ' ' +getDeleteLink(rowId, item);
                     html += '</div>';
                     addToMap(i, item, latLngs);
                 } else { // must be hazard
-                    html += '<div>';
                     html += item.name;
                     html += '<div>' + item.NAICTitle + '</div>';
                     html += '<div>' + truncateIfTooLong(item.description) + '</div>';
@@ -179,7 +180,7 @@ var Persons = function() {
             var data = ({ "id": id });
             var success = function(data, textStatus) {
                 var person = data;
-                showPersonForm();
+                showPersonsForm();
                 $("input[name='person_id']").val(person.id);
                 $("input[name='person_name']").val(person.name);
                 $("input[name='person_lat']").val(person.lat);
@@ -253,13 +254,12 @@ var Persons = function() {
             doAjax("GET", "search.do", postData, success, error);
         },
 
-        remove: function(row, id) {
+        remove: function(rowId, id) {
             clearAllMessages();
             showLoadingMessage();
             var data = ({ "id": id });
             var success = function(data, textStatus) {
-                var table = document.getElementById("searchResultsTable");
-                table.deleteRow(row);
+                $('div').remove('#' + rowId);
                 if (map) {
                     personMarkers.clearFromMap(id, map)
                 }
