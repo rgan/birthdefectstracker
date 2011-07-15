@@ -2,17 +2,12 @@ package org.healthapps.birthdefects.web;
 
 import org.healthapps.birthdefects.model.Role;
 import org.healthapps.birthdefects.model.User;
-import org.healthapps.birthdefects.utils.Encryptor;
 import org.springframework.security.Authentication;
 import org.springframework.security.GrantedAuthority;
 import org.springframework.security.context.SecurityContextHolder;
 import org.springframework.security.userdetails.UserDetails;
-import org.springframework.web.context.WebApplicationContext;
-import org.springframework.web.servlet.DispatcherServlet;
-import org.bouncycastle.crypto.InvalidCipherTextException;
 
 import javax.servlet.http.HttpServletResponse;
-import javax.servlet.http.HttpServletRequest;
 import java.io.IOException;
 import java.text.SimpleDateFormat;
 
@@ -73,19 +68,20 @@ public class BaseController {
         writeToResponse(response, BAD_REQUEST, "You must be logged in.");
     }
 
-    protected void setupEncrytionKey(HttpServletRequest request) {
-        final WebApplicationContext webAppContext = (WebApplicationContext) request.getAttribute(DispatcherServlet.WEB_APPLICATION_CONTEXT_ATTRIBUTE);
-        final String encryptionKey = webAppContext.getServletContext().getInitParameter(ENCRYPTION_KEY);
-        Encryptor.setKey(encryptionKey);
-    }
+//    protected void setupEncrytionKey(HttpServletRequest request) {
+//        final WebApplicationContext webAppContext = (WebApplicationContext) request.getAttribute(DispatcherServlet.WEB_APPLICATION_CONTEXT_ATTRIBUTE);
+//        final String encryptionKey = webAppContext.getServletContext().getInitParameter(ENCRYPTION_KEY);
+//        Encryptor.setKey(encryptionKey);
+//    }
 
     protected String encrypt(String password) {
-        final Encryptor encryptor = new Encryptor();
-        try {
-            return encryptor.encrypt(password);
-        } catch (InvalidCipherTextException e) {
-            throw new RuntimeException(e);
-        }
+        return password;
+//        final Encryptor encryptor = new Encryptor();
+//        try {
+//            return encryptor.encrypt(password);
+//        } catch (InvalidCipherTextException e) {
+//            throw new RuntimeException(e);
+//        }
     }
 
     protected SimpleDateFormat getDateFormat() {

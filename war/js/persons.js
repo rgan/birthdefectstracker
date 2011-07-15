@@ -140,7 +140,7 @@ var Persons = function() {
             html = '<div id="">';
             $.each(personsOrHazards, function(i, item) {
                 var rowId = "p_" + item.id;
-                html += '<div id="' + rowId + '">';
+                html += '<div class="searchResultItem" id="' + rowId + '">';
                 if (item.dateOfBirth) { // must be person
                     html += item.name + '(' + item.dateOfBirth + ')';
                     html += ' ' + item.birthDefects;
@@ -152,10 +152,10 @@ var Persons = function() {
                     addToMap(i, item, latLngs);
                 } else { // must be hazard
                     html += item.name;
-                    html += '<div>' + item.NAICTitle + '</div>';
-                    html += '<div>' + truncateIfTooLong(item.description) + '</div>';
-                    html += EnvHazards.getMapLink(item);
-                    html += EnvHazards.getDeleteLink(i, item);
+                    html += '<div>' + item.NAICTitle;
+                    html += ' ' + truncateIfTooLong(item.description) + '</div>';
+                    html += ' ' +EnvHazards.getMapLink(item);
+                    html += ' ' +EnvHazards.getDeleteLink(rowId, item);
                     html += '</div>';
                     EnvHazards.addHazardToMap(item, latLngs);
                 }

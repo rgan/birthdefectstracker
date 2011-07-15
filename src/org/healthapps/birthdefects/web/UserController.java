@@ -5,7 +5,6 @@ import org.healthapps.birthdefects.dao.UserDao;
 import org.healthapps.birthdefects.model.ErrorMessages;
 import org.healthapps.birthdefects.model.User;
 import org.healthapps.birthdefects.model.UserValidator;
-import org.healthapps.birthdefects.utils.Encryptor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.MessageSource;
 import org.springframework.stereotype.Controller;
@@ -46,7 +45,7 @@ public class UserController extends BaseController {
 
     @RequestMapping(value = "/saveuser.do", method = RequestMethod.POST)
     public void save(HttpServletRequest request, HttpServletResponse response) throws IOException {
-        setupEncrytionKey(request);
+        //setupEncrytionKey(request);
         User user = userFromRequest(request);
         ErrorMessages errors = new UserValidator(dao).validate(user, isAdmin());
         if (errors.isEmpty()) {

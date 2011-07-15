@@ -1,8 +1,5 @@
 package org.healthapps.birthdefects.model;
 
-import com.google.common.collect.ImmutableClassToInstanceMap;
-import org.healthapps.birthdefects.utils.Encryptor;
-
 public class UserBuilder {
     private String username = "test";
     private String password = "testtest";

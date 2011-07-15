@@ -2,8 +2,6 @@ package org.healthapps.birthdefects.model;
 
 import com.google.appengine.repackaged.com.google.common.collect.Lists;
 import org.apache.commons.lang.StringUtils;
-import org.bouncycastle.crypto.InvalidCipherTextException;
-import org.healthapps.birthdefects.utils.Encryptor;
 import org.springframework.security.GrantedAuthority;
 import org.springframework.security.GrantedAuthorityImpl;
 import org.springframework.security.userdetails.UserDetails;

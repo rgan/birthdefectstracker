@@ -22,20 +22,19 @@ var EnvHazards = function() {
         },
 
         getMapLink : function(hazard) {
-            return '<a class="ui-icon ui-icon-image" href="javascript:EnvHazards.map(' + hazard.id + ')"></a>';
+            return '<a href="javascript:EnvHazards.map(' + hazard.id + ')">Map</a>';
         },
 
-        getDeleteLink : function(i, hazard) {
-            return '<a class="ui-icon ui-icon-trash" href="javascript:EnvHazards.remove(' + (i + 1) + ',' + hazard.id + ')"></a>';
+        getDeleteLink : function(rowId, hazard) {
+            return '<a href="javascript:EnvHazards.remove(\'' + rowId + '\',' + hazard.id + ')">Delete</a>';
         },
 
-        remove: function(row, id) {
+        remove: function(rowId, id) {
             clearAllMessages();
             showLoadingMessage();
             var data = ({ "id": id });
             var success = function(data, textStatus) {
-                var table = document.getElementById("searchResultsTable");
-                table.deleteRow(row);
+                $('div').remove('#' + rowId);
                 if (map) {
                     polysCache.clearFromMap(id, map);
                 }
